@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Software Inc.</title>
+	<link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="icon" href="favicon.png" type="image/png" />
+	<script src="dist/jquery-3.2.1.min.js"></script>
+	<script src="dist/jquery-migrate-3.0.0.min.js"></script>
+	<script src="dist/jquery.stellar.min.js"></script>
+	<script>
+		$(function() {
+			$.stellar();
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="trailer-wrapper">
+			<div class="social-media">
+				<a href="https://twitter.com/softwareincgame"><img src="res/icons/social/twitter.svg"/></a>
+				<a href="https://www.reddit.com/r/SoftwareInc/"><img src="res/icons/social/reddit.svg"/></a>
+				<a href="https://discord.gg/TQyqXye"><img src="res/icons/social/discord.svg"/></a>
+			</div>
+			<div class="trailer">
+				<iframe src="https://www.youtube.com/embed/6M2jonWFHwQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="container">
+			<video class="video-bg" autoplay loop muted data-stellar-ratio="0.4">
+				<source src="res/trailer.mp4" type="video/mp4"/>
+			</video>
+			<nav>
+				<a href="https://softwareinc.coredumping.com/forum">Forum</a>
+				<a href="https://trello.com/b/9I286Mhu/software-inc">Roadmap</a>
+				<a href="http://coredumping.com/presskit/sheet.php?p=software_inc">Presskit</a>
+				<a href="https://dodistribute.com/access/oEIEpPUkjK/">Distribute</a>
+			</nav>
+			<div class="h-container">
+				<div class="title">
+					<h1>Software Inc.</h1>
+					<h2>Tycoon/Management/Simulation</h2>
+					<div class="actions">
+						<div>
+							<div class="a-buy-wrapper">
+								<img src="res/icons/social/steam.svg"/>
+								<a class="a-buy" href="http://store.steampowered.com/app/362620">
+									Buy
+								</a>
+							</div>
+							<a href="https://softwareinc.coredumping.com/buy" class="offline">Offline Version</a>
+						</div>
+						<a href="https://softwareinc.coredumping.com/demo">Trial</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+
+	</div>
+</body>
+<script>
+
+$('#more').on('mouseover', () => {
+	$('#more-d').css('opacity', '1');
+});
+
+$('.more-a').on('mouseout', () => {
+	$('#more-d').css('opacity', '0');
+})
+
+</script>
+</html>
