@@ -1,3 +1,8 @@
+:root {
+	--color-acc: #EEFF41;
+	--color-acc-hover: #E4F900;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -82,17 +87,17 @@ header {
 }
 
 header .container {
-	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 	background-image: url(../res/background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 .h-container {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(20, 90, 20, 0.8);
+	background-color: rgba(20, 90, 20, 0.7);
 	display: flex;
 }
 
@@ -113,15 +118,13 @@ header .container {
 
 .actions a:not(.offline) {
 	display: block;
-	margin-right: 16px;
+	margin-right: 8px;
 	padding: 12px;
 	min-width: 130px;
-	border-radius: 3px;
 	text-align: center;
 	font-size: 1.2em;
-	box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
 	color: black;
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .actions a:not(.offline):hover {
@@ -140,11 +143,11 @@ header .container {
 }
 
 .a-buy {
-	background-color: #EEFF41 !important;
+	background-color: var(--color-acc) !important;
 }
 
 .a-buy:hover {
-	background-color: #E4F900 !important;
+	background-color: var(--color-acc-hover) !important;
 }
 
 .a-buy-wrapper img {
@@ -165,6 +168,7 @@ header .container {
 .trailer {
 	position: relative;
 	padding-bottom: 56.25%;
+	border-top: 3px solid var(--color-acc);
 }
 
 .trailer iframe {
