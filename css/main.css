@@ -11,25 +11,49 @@ a, a:visited {
 	color: inherit;
 }
 
-nav {
+.nav-container {
+	background-color: rgba(255, 255, 255, 0.2);
 	position: absolute;
 	width: 100%;
 	z-index: 1;
 	display: flex;
+}
+
+nav {
+	display: flex;
 	margin-left: 10%;
 	font-family: 'Consolas', monospace;
 	font-size: 1.2em;
-	padding: 24px 0;
+	padding: 16px 0;
 	color: white;
+	align-items: center;
 }
 
 nav > a {
-	margin-right: 48px;
 	opacity: 0.8;
+}
+
+nav > a:not(:last-of-type) {
+	margin-right: 48px;
 }
 
 nav > a:hover {
 	opacity: 1;
+}
+
+.social-media {
+	display: flex;
+	padding: 8px 0;
+	margin-left: 0 !important;
+	margin-right: 10% !important;
+}
+
+.social-media a:not(:last-of-type) {
+	margin-right: 16px !important;
+}
+
+.social-media a img {
+	height: 1.4em;
 }
 
 h1 {
@@ -59,15 +83,10 @@ header {
 
 header .container {
 	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-}
-
-.video-bg {
-	position: fixed;
-	min-height: 100vh;
-	min-width: 100vw;
-	height: auto;
-	width: auto;
-	z-index: -100;
+	background-image: url(../res/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .h-container {
@@ -142,15 +161,6 @@ header .container {
 	right: 10%;
 }
 
-.social-media {
-	display: flex;
-	padding: 8px 0;
-}
-
-.social-media a img {
-	height: 2em;
-	margin-right: 12px;
-}
 
 .trailer {
 	position: relative;
