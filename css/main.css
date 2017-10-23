@@ -1,19 +1,42 @@
 :root {
 	--color-acc: #EEFF41;
 	--color-acc-hover: #E4F900;
+	--color-main: #7DB163;
+	--wrap: 10%;
 }
 
-html, body {
+html, body{
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
 }
 
-/*Global*/
+* {
+	box-sizing: border-box;
+}
+
+/* Global */
+
 a, a:visited {
 	cursor: pointer;
 	text-decoration: none;
 	color: inherit;
+}
+
+h1 {
+	margin: 0;
+	font-family: 'Anke';
+	font-size: 2.7rem;
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0;
+	font-family: 'Anke';
+	font-size: 2rem;
+	font-weight: normal;
 }
 
 .nav-container {
@@ -26,7 +49,7 @@ a, a:visited {
 
 nav {
 	display: flex;
-	margin-left: 10%;
+	margin-left: var(--wrap);
 	font-family: 'Consolas', monospace;
 	font-size: 1.2em;
 	padding: 16px 0;
@@ -49,39 +72,23 @@ nav > a:hover {
 .social-media {
 	display: flex;
 	padding: 8px 0;
-	margin-left: 0 !important;
-	margin-right: 10% !important;
+	margin-left: 0;
+	margin-right: 10%;
 }
 
 .social-media a:not(:last-of-type) {
-	margin-right: 16px !important;
+	margin-right: 16px;
 }
 
 .social-media a img {
 	height: 1.4em;
 }
 
-h1 {
-	margin: 0;
-	font-weight: normal;
-	font-family: 'Anke', sans-serif;
-	font-size: 4.5em;
-	line-height: 1em;
-}
+/* Header */
 
-h2 {
-	margin: 0;
-	font-weight: normal;
-	font-family: 'Anke', sans-serif;
-	font-size: 1.6em;
-	line-height: 1em;
-	opacity: 0.6;
-}
-
-/**/
 header {
 	width: 100%;
-	height: 80%;
+	height: 80vh;
 	overflow: hidden;
 	position: relative;
 }
@@ -92,23 +99,35 @@ header .container {
 	background-size: cover;
 	background-attachment: fixed;
 	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+	height: 100%;
 }
 
 .h-container {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(20, 90, 20, 0.7);
+	background-color: rgba(22, 47, 22, 0.5);
 	display: flex;
 }
 
 .title {
 	font-family: 'Anke', sans-serif;
 	color: white;
-	margin-left: 10%;
+	margin-left: var(--wrap);
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.title h1 {
+	font-size: 4.5em;
+	line-height: 1em;
+}
+
+.title h2 {
+	font-size: 1.6em;
+	line-height: 1em;
+	opacity: 0.6;
 }
 
 .actions {
@@ -120,7 +139,7 @@ header .container {
 	display: block;
 	margin-right: 8px;
 	padding: 12px;
-	min-width: 130px;
+	min-width: 150px;
 	text-align: center;
 	font-size: 1.2em;
 	color: black;
@@ -161,7 +180,7 @@ header .container {
 	width: 40%;
 	z-index: 2;
 	bottom: 0;
-	right: 10%;
+	right: var(--wrap);
 }
 
 
@@ -179,7 +198,63 @@ header .container {
 	height: 100%;
 }
 
-/*Content*/
-.container {
+/* Content */
+
+section > * {
+	padding: 0 var(--wrap);
+}
+
+*[wrap] {
+	padding: 0 var(--wrap);
+}
+
+.features {
 	height: 100%;
+	margin-top: 10vh;
+	color: white;
+}
+
+.f-header {
+	height: 25vh;
+	padding-top: 1.2em;
+	background-color: #ECEFF1;
+	clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+	display: flex;
+	align-items: center;
+	color: black;
+}
+
+.features > div {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-position: center;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.features > div p {
+	width: 30em;
+	line-height: 1.4;
+}
+
+.f-build {
+	background-color: #43A047;
+}
+
+.f-develop {
+	background-color: #3F51B5;
+}
+
+.f-manage {
+	background-color: #9C27B0;
+}
+
+.f-mod {
+	background-color: #F4511E;
+}
+
+.f-share {
+	background-color: #000000;
 }
