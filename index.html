@@ -30,6 +30,7 @@
 			<div class="nav-container">
 				<nav>
 					<a href="https://softwareinc.coredumping.com/forum">Forum</a>
+					<a href="https://softwareinc.coredumping.com/wiki">Wiki</a>
 					<a href="https://trello.com/b/9I286Mhu/software-inc">Roadmap</a>
 					<a href="http://coredumping.com/presskit/sheet.php?p=software_inc">Presskit</a>
 					<a href="https://dodistribute.com/access/oEIEpPUkjK/">Distribute</a>
@@ -50,7 +51,7 @@
 					<div class="actions">
 						<div>
 							<div class="a-buy-wrapper">
-								<img src="res/icons/social/steam.svg"/>
+								<img src="res/icons/social/steam.svg" />
 								<a class="a-buy" href="http://store.steampowered.com/app/362620">
 									Buy
 								</a>
@@ -67,46 +68,66 @@
 	<section class="features">
 		<h1 class="f-header">Run your own Software Company!</h1>
 		<div class="f-build">
-			<h2>Build</h2>
-			<p>
-				Design your own headquaters in an open area on different locations. The freeform wall-tool allows for unique building layouts and a resizable grid makes furnishing just as detailed!
-			</p>
+			<div class="f-content">
+				<h2>Build</h2>
+				<p>
+					Design your own headquaters in an open area on different locations. The freeform wall-tool allows for unique building layouts and a resizable grid makes furnishing just as detailed!
+				</p>
+			</div>
+			<div class="f-image">
+				<img src="res/features/build.jpg" />
+			</div>
 		</div>
 		<div class="f-develop">
-			<h2>Develop</h2>
-			<p>
-				The main focus of the Game is creating Software and making the big bucks. Decide yourself which features your Software includes and research new technologies to defeat the competition!
-			</p>
+			<div class="f-content">
+				<h2>Develop</h2>
+				<p>
+					The main focus of the Game is creating Software and making the big bucks. Decide yourself which features your Software includes and research new technologies to defeat the competition!
+				</p>
+			</div>
+			<div class="f-image">
+				<img src="res/features/develop.jpg" />
+			</div>
 		</div>
 		<div class="f-manage">
-			<h2>Manage</h2>
-			<p>
-				Expand your company and hire employees to create bigger and better software, but also keep track of your finances and stocks.
-			</p>
+			<div class="f-content">
+				<h2>Manage</h2>
+				<p>
+					Expand your company and hire employees to create bigger and better software, but also keep track of your finances and stocks.
+				</p>
+			</div>
+			<div class="f-image">
+				<img src="res/features/manage.jpg" />
+			</div>
 		</div>
 		<div class="f-mod">
-			<h2>Mod</h2>
-			<p>
-				Software Inc. features full Modding support. Put your own ideas into Mods or Furniture or download the from the Steam Workshop!
-			</p>
+			<div class="f-content">
+				<h2>Mod</h2>
+				<p>
+					Software Inc. features full Modding support. Put your own ideas into Mods or Furniture or download the from the Steam Workshop!
+				</p>
+				<a href="https://softwareinc.coredumping.com/wiki/index.php?title=Modding">See the Wiki</a>
+			</div>
 		</div>
 		<div class="f-share">
-			<h2>Share</h2>
-			<p>
-				Download Mods, Furniture and Buildings made by the community from the Steam Workshop &ndash; Or you can upload your own!
-			</p>
+			<div class="f-content">
+				<h2>Share</h2>
+				<p>
+					Download Mods, Furniture and Buildings made by the community from the Steam Workshop &ndash; Or you can upload your own!
+				</p>
+				<a href="https://steamcommunity.com/app/362620/workshop/">Steam Workshop</a>
+			</div>
 		</div>
 	</section>
 </body>
 <script>
+	$('#more').on('mouseover', () => {
+		$('#more-d').css('opacity', '1');
+	});
 
-$('#more').on('mouseover', () => {
-	$('#more-d').css('opacity', '1');
-});
-
-$('.more-a').on('mouseout', () => {
-	$('#more-d').css('opacity', '0');
-})
-
+	$('.more-a').on('mouseout', () => {
+		$('#more-d').css('opacity', '0');
+	})
 </script>
+
 </html>

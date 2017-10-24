@@ -10,8 +10,8 @@
    version="1.1"
    viewBox="0 0 199 151.00182"
    id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="Steam_icon_logo.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="steam.svg"
    width="199"
    height="151.00182">
   <metadata
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,8 +35,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="657"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview25"
      showgrid="false"
      inkscape:snap-bbox="true"
@@ -51,10 +51,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.0049624"
-     inkscape:cx="299.63032"
+     inkscape:cx="82.20925"
      inkscape:cy="69.641725"
      inkscape:window-x="-8"
-     inkscape:window-y="856"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
@@ -100,7 +100,7 @@
   <path
      d="m 110.5,44.322 c 0,0.196 0,0.392 0.01,0.576 L 82.002,86.31 c -4.618,-0.21 -9.252,0.6 -13.646,2.41 -1.937,0.79 -3.752,1.76 -5.455,2.88 L 0.302,65.83 C 0.30249,65.83 0,104.78144 0,104.78144 L 49.144,125.68 c 2.222,9.93 9.034,18.64 19.084,22.83 16.443,6.87 35.402,-0.96 42.242,-17.41 1.78,-4.3 2.61,-8.81 2.49,-13.31 l 40.79,-29.15 c 0.33,0.01 0.67,0.02 1,0.02 C 179.16,88.66 199,68.76 199,44.322 199,19.882 179.16,0 154.75,0 130.35,0 110.5,19.882 110.5,44.322 Z m -6.84,83.918 c -5.294,12.71 -19.9,18.74 -32.596,13.45 -5.857,-2.44 -10.279,-6.91 -12.83,-12.24 l 14.405,5.97 c 9.363,3.9 20.105,-0.54 23.997,-9.9 3.904,-9.37 -0.525,-20.13 -9.883,-24.03 L 71.862,95.32 c 5.746,-2.18 12.278,-2.26 18.381,0.28 6.153,2.56 10.927,7.38 13.457,13.54 2.53,6.16 2.52,12.96 -0.04,19.1 m 51.09,-54.38 c -16.25,0 -29.48,-13.25 -29.48,-29.538 0,-16.275 13.23,-29.529 29.48,-29.529 16.26,0 29.49,13.254 29.49,29.529 0,16.288 -13.23,29.538 -29.49,29.538 M 132.66,44.277 c 0,-12.253 9.92,-22.191 22.14,-22.191 12.23,0 22.15,9.938 22.15,22.191 0,12.254 -9.92,22.183 -22.15,22.183 -12.22,0 -22.14,-9.929 -22.14,-22.183 z"
      id="path23"
-     style="fill:#000000"
+     style="fill:#ffffff"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="scccccccccccssssccccccccsccssscsssss" />
 </svg>

@@ -1,7 +1,6 @@
 :root {
-	--color-acc: #EEFF41;
-	--color-acc-hover: #E4F900;
-	--color-main: #7DB163;
+	--color-acc: #7DB163;
+	--color-acc-hover: #7DB163;
 	--wrap: 10%;
 }
 
@@ -62,7 +61,7 @@ nav > a {
 }
 
 nav > a:not(:last-of-type) {
-	margin-right: 48px;
+	margin-right: 64px;
 }
 
 nav > a:hover {
@@ -94,7 +93,7 @@ header {
 }
 
 header .container {
-	background-image: url(../res/background.png);
+	background-image: url('../res/background_w.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -105,7 +104,7 @@ header .container {
 .h-container {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(22, 47, 22, 0.5);
+	background-color: rgba(0, 20, 20, 0.5);
 	display: flex;
 }
 
@@ -163,6 +162,7 @@ header .container {
 
 .a-buy {
 	background-color: var(--color-acc) !important;
+	color: white !important;
 }
 
 .a-buy:hover {
@@ -225,36 +225,79 @@ section > * {
 }
 
 .features > div {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	background-position: center;
-	min-height: 400px;
+	height: 400px;
+	display: flex;
+	padding-right: 0;
+}
+
+.f-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 }
 
-.features > div p {
-	width: 30em;
+.f-content p {
+	max-width: 30em;
 	line-height: 1.4;
 }
 
+.f-content a {
+	padding: 0.5em 1em;
+	min-width: 100px;
+	border: 2px solid white;
+	text-align: center;
+	transition: all 200ms ease;
+}
+
+.f-content a:hover {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+.f-image {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	overflow: hidden;
+	height: 100%;
+	padding-left: 5%;
+}
+
+.f-image img {
+	height: 100%;
+}
+
 .f-build {
-	background-color: #43A047;
+	background-color: #77a55c;
+	/*background-image: url('../res/features/build.svg');
+	background-repeat: no-repeat;
+	background-size: auto 150%;
+	background-position: left;*/
 }
 
 .f-develop {
-	background-color: #3F51B5;
+	background-color: #5F7A9B;
 }
 
 .f-manage {
-	background-color: #9C27B0;
+	background-color: #DC6C82;
 }
 
 .f-mod {
-	background-color: #F4511E;
+	background-color: #7E5FA0;
 }
 
 .f-share {
 	background-color: #000000;
+	#7ECF70;
+	#5F7A9B;
+	#DC6C82;
+	#EC9D70;
+	#7E5FA0;
+	#5ACBCF;
+	#D8C259;
+	#C72828;
+
+	#77a55c;
 }
