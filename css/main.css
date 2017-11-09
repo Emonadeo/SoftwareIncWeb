@@ -93,7 +93,7 @@ header {
 }
 
 header .container {
-	background-image: url('../res/background_w.jpg');
+	background-image: url('../res/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
